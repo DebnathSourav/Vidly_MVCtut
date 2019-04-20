@@ -213,15 +213,30 @@
     <Compile Include="Migrations\201904192303539_UpdateBirthDateStuff.Designer.cs">
       <DependentUpon>201904192303539_UpdateBirthDateStuff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904192317125_CreateMovieDB.cs" />
+    <Compile Include="Migrations\201904192317125_CreateMovieDB.Designer.cs">
+      <DependentUpon>201904192317125_CreateMovieDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904192338560_CreateGenreModel.cs" />
+    <Compile Include="Migrations\201904192338560_CreateGenreModel.Designer.cs">
+      <DependentUpon>201904192338560_CreateGenreModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904192344489_UpdateMovieDB.cs" />
+    <Compile Include="Migrations\201904192344489_UpdateMovieDB.Designer.cs">
+      <DependentUpon>201904192344489_UpdateMovieDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModels\MovieFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -284,6 +299,9 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -325,6 +343,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904192303539_UpdateBirthDateStuff.resx">
       <DependentUpon>201904192303539_UpdateBirthDateStuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904192317125_CreateMovieDB.resx">
+      <DependentUpon>201904192317125_CreateMovieDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904192338560_CreateGenreModel.resx">
+      <DependentUpon>201904192338560_CreateGenreModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904192344489_UpdateMovieDB.resx">
+      <DependentUpon>201904192344489_UpdateMovieDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
